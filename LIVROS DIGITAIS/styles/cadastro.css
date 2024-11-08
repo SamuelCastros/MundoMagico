@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+:root{
+    --fonte-texto: "Kreon", serif;
+    --fonte-titulo: "Lilita One", sans-serif;
+    --cor-primaria:#FF9000;
+    --cor-secundária:#F5FFBE;
+    --cor-texto:#000000;
+    --cor-titulo:#B31313;
+    --cor-botao-links:#FFFFFF;
+    --cor-botao-entrar:#FFB700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-secundária);
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    background-color: var(--cor-primaria);  
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.cabecalho_menu_logo{
+    padding: 4% 4% 0 4%;
+  }
+
+  .cabecalho_menu_link{
+    text-decoration: none;  
+    text-align: center;
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    background-color: #FFFFFF;
+    border-radius: 23px;
+    padding-right: 2%;
+    font-size: 1.25rem;
+    padding: 2% 4% 2% 4%;
+    margin-top: 5%;
+    margin-right: 5% ;
+    
+  }
+
+  .titulo-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B31313;
+    font-size: 3rem;
+    font-family: "Lilita One", sans-serif;
+    margin-bottom: 20%;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 55px;
+    border-radius: 43px;
+    font-size: 1.25rem;
+    font-family: "Kreon", serif;
+    flex-direction: column; 
+}
+.caixas-titulo_texto {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px; 
+    gap: 5%;
+   margin-right: 10%;
+}
+.titulo-nome-caixa-texto,.titulo-sobrenome-caixa-texto,.titulo-email-caixa-texto,.titulo-celular-caixa-texto,.titulo-senha-caixa-texto,.titulo-confirmar_senha-caixa-texto{
+    text-align: center;
+    margin-bottom: 0; 
+    margin-left: 5%;
+    font-size: 11px;
+}
+.caixa-de-texto-nome,
+.caixa-de-texto-sobrenome,
+.caixa-de-texto-email,
+.caixa-de-texto-celular,
+.caixa-de-texto-senha,
+.caixa-de-texto-confirmar_senha {
+    width: 85px; 
+    height: 31px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    background-color: #FFB700;
+    border-radius: 35px;
+    border: none;
+    text-align: center;
+    margin: 0 5%;
+   
+}
+
+.botao {
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.finalizar_cadastro-botao {
+    font-size: 1rem;
+    font-family: "Kreon", serif;
+    color: white;
+    background-color: #FFB700;
+    border-radius: 35px;
+    width: 222px;
+    height: 28px;
+    border:  none ;
+}
+.finalizar_cadastro-botao:hover {
+    background-color: #FFB700;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+.rodape{
+    background-color: #FF9000; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+@media screen and (min-width:1440px) {
+
+    .cabecalho{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cabecalho_menu{
+        display: flex;
+        align-items: center;
+        gap: 37px;
+        
+    }
+
+    .cabecalho_menu_logo{
+        padding: 0 10% 0 10%;
+        margin-right: 75% ;
+        margin-left: 5%;
+      }
+
+     
+
+      .cabecalho_menu_link{
+        width: 30%;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+       
+      }
+    .titulo-cadastro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #B31313;
+        font-size: 6rem;
+        font-family: "Lilita One", sans-serif;
+        margin-top: -40px;
+    }
+    .conteudo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 55px;
+        border-radius: 15px;
+        font-size: 1.25rem;
+        font-family: "Kreon", serif;
+        flex-direction: column; 
+    }
+    .caixas-titulo_texto {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+    .titulo-nome-caixa-texto,.titulo-sobrenome-caixa-texto,.titulo-email-caixa-texto,.titulo-celular-caixa-texto,.titulo-senha-caixa-texto,.titulo-confirmar_senha-caixa-texto{
+        text-align: center;
+        margin-bottom: 0; 
+        margin-right: 10px; 
+        flex: 1;
+    
+    }
+    .caixa-de-texto-nome,
+    .caixa-de-texto-sobrenome,
+    .caixa-de-texto-email,
+    .caixa-de-texto-celular,
+    .caixa-de-texto-senha,
+    .caixa-de-texto-confirmar_senha {
+        width: 90%; 
+        height: 50px;
+        font-family: "Inter", sans-serif;
+        color: white;
+        background-color: #FFB700;
+        border-radius: 35px;
+        border: none;
+        text-align: center;
+        margin: 0 5%;
+    }
+    
+    .botao {
+        margin-top: 20px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .finalizar_cadastro-botao {
+        font-size: 1.5rem;
+        font-family: "Kreon", serif;
+        color: white;
+        background-color: #FFB700;
+        border-radius: 35px;
+        width: 167px;
+        height: 72px;
+        border:  none ;
+    }
+    .finalizar_cadastro-botao:hover {
+        background-color: #FF9000;
+        color: white;
+        transform: scale(1.2);
+    }
+    
+}
