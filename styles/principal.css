@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+:root{
+    --fonte-texto: "Kreon", serif;
+    --fonte-titulo: "Lilita One", sans-serif;
+    --cor-primaria:#FF9000;
+    --cor-secundária:#F5FFBE;
+    --cor-texto:#000000;
+    --cor-titulo:#B31313;
+    --cor-botao-links:#FFFFFF;
+    --cor-botao-entrar:#FFB700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-secundária);
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    background-color: var(--cor-primaria);  
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.cabecalho_menu_logo{
+    padding: 4% 4% 0 4%;
+  }
+
+  .cabecalho_menu_link{
+    text-decoration: none;  
+    text-align: center;
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    background-color: #FFFFFF;
+    border-radius: 23px;
+    padding-right: 2%;
+    font-size: 1.25rem;
+    padding: 2% 4% 2% 4%;
+    margin-top: 5%;
+    margin-right: 5% ;
+    
+  }
+
+  .titulo {
+    display: flex;
+    justify-content: center;
+    color: #B31313;
+    font-size: 18px;
+    font-family: "Lilita One", sans-serif;
+    margin-top: 80px;
+    margin-bottom: 10%;
+    gap: 5%;
+}
+
+.categoria {
+    margin-bottom: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+.categoria-titulo {
+    font-size: 1rem;
+    font-family: 'Kreon', serif;
+    margin-bottom: 5px; 
+    padding: 10px 30px;
+    border-radius: 40px;
+    background-color: #FFB700;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 60px;
+    align-items: end;
+}
+
+.imagens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape {
+    background-color: #FF9000; 
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+@media screen and (min-width:1440px) {
+
+    .cabecalho{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cabecalho_menu{
+        display: flex;
+        align-items: center;
+        gap: 37px;
+        
+    }
+
+    .cabecalho_menu_logo{
+        padding: 0 10% 0 10%;
+        margin-right: 75% ;
+        margin-left: 5%;
+      }
+
+     
+
+      .cabecalho_menu_link{
+        width: 30%;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+       
+      }
+
+      .titulo {
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        color: #B31313;
+        font-size: 25px;
+        font-family: "Lilita One", sans-serif;
+        margin-top: 100px;
+    }
+    .imagem-garotos {
+        width: -80%; 
+        height: auto;
+    }
+    
+    .categoria {
+        margin-bottom: 20px;
+        padding: 5px;
+        
+    
+    }
+    .foto-livro img {
+        width: 200px;
+        height: auto;
+        margin: 30px;
+    }
+    .botao {
+        margin: 5px 0;
+        padding: 5px 695px;
+        
+    }
+    button {
+        border: none;
+        border-radius: 30px;
+        background-color: #FFB700;
+        color: white;
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+    
+    .categoria-titulo {
+        font-size: 1.5rem;
+        font-family: 'Kreon', serif;
+        margin-bottom: 5px; 
+        padding: 10px 30px;
+        border-radius: 40px;
+        background-color: #FFB700;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        margin: 5px 0;
+    
+    }
+    .imagens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    }
